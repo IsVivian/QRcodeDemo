@@ -14,6 +14,7 @@
 		4B54CE4E1D1D31E100AE3972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B54CE4C1D1D31E100AE3972 /* LaunchScreen.storyboard */; };
 		4B54CE591D1D31E100AE3972 /* QRcodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B54CE581D1D31E100AE3972 /* QRcodeDemoTests.swift */; };
 		4B54CE641D1D31E100AE3972 /* QRcodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B54CE631D1D31E100AE3972 /* QRcodeDemoUITests.swift */; };
+		4B54CE721D1D320300AE3972 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B54CE711D1D320300AE3972 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4B54CE5F1D1D31E100AE3972 /* QRcodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B54CE631D1D31E100AE3972 /* QRcodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeDemoUITests.swift; sourceTree = "<group>"; };
 		4B54CE651D1D31E100AE3972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B54CE711D1D320300AE3972 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B54CE721D1D320300AE3972 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		4B54CE371D1D31E100AE3972 = {
 			isa = PBXGroup;
 			children = (
+				4B54CE711D1D320300AE3972 /* AVFoundation.framework */,
 				4B54CE421D1D31E100AE3972 /* QRcodeDemo */,
 				4B54CE571D1D31E100AE3972 /* QRcodeDemoTests */,
 				4B54CE621D1D31E100AE3972 /* QRcodeDemoUITests */,
