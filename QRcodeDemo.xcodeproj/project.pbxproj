@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B44B7BB1D20B58D00FDE3C2 /* IMG_1884.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4B44B7BA1D20B58D00FDE3C2 /* IMG_1884.JPG */; };
 		4B54CE441D1D31E100AE3972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B54CE431D1D31E100AE3972 /* AppDelegate.swift */; };
 		4B54CE461D1D31E100AE3972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B54CE451D1D31E100AE3972 /* ViewController.swift */; };
 		4B54CE491D1D31E100AE3972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B54CE471D1D31E100AE3972 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B44B7BA1D20B58D00FDE3C2 /* IMG_1884.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1884.JPG; path = ../../../../Downloads/IMG_1884.JPG; sourceTree = "<group>"; };
 		4B54CE401D1D31E100AE3972 /* QRcodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRcodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B54CE431D1D31E100AE3972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B54CE451D1D31E100AE3972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		4B54CE421D1D31E100AE3972 /* QRcodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4B44B7BA1D20B58D00FDE3C2 /* IMG_1884.JPG */,
 				4B54CE431D1D31E100AE3972 /* AppDelegate.swift */,
 				4B54CE451D1D31E100AE3972 /* ViewController.swift */,
 				4B54CE471D1D31E100AE3972 /* Main.storyboard */,
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B44B7BB1D20B58D00FDE3C2 /* IMG_1884.JPG in Resources */,
 				4B54CE4E1D1D31E100AE3972 /* LaunchScreen.storyboard in Resources */,
 				4B54CE4B1D1D31E100AE3972 /* Assets.xcassets in Resources */,
 				4B54CE491D1D31E100AE3972 /* Main.storyboard in Resources */,
@@ -486,6 +490,7 @@
 				4B54CE6A1D1D31E100AE3972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B54CE6B1D1D31E100AE3972 /* Build configuration list for PBXNativeTarget "QRcodeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				4B54CE6D1D1D31E100AE3972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B54CE6E1D1D31E100AE3972 /* Build configuration list for PBXNativeTarget "QRcodeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				4B54CE701D1D31E100AE3972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

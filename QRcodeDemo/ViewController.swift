@@ -104,6 +104,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     //生成二维码
     @IBAction func makeQRcodeBtnAct(sender: AnyObject) {
         
+        qrcodeImgV.image = createQRForString("要毁容了。。。", qrImageName: "IMG_1884.JPG")
+        
         
         
     }
@@ -132,14 +134,32 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             let codeImage = UIImage(CIImage: colorFilter!.outputImage!.imageByApplyingTransform(CGAffineTransformMakeScale(5, 5)))
             
             //通常二维码是定制的，需要在中间放自定义的图片
-            if let iconImage = UIImage(named: ) {
-                <#code#>
+            if let iconImage = UIImage(named: qrImageName!) {
+                let rect = CGRectMake(0, 0, codeImage.size.width, codeImage.size.height)
+                UIGraphicsBeginImageContext(rect.size)
+                
+                codeImage.drawInRect(rect)
+                
+                let avatarSize = CGSizeMake(rect.size.width * 0.25, rect.size.height * 0.25)
+                
+                let x = (rect.width - avatarSize.width) * 0.5
+                let y = (rect.height - avatarSize.height) * 0.5
+                
+                iconImage.drawInRect(CGRectMake(x, y, avatarSize.width, avatarSize.height))
+                let resultImage = UIGraphicsGetImageFromCurrentImageContext()
+                
+                UIGraphicsEndImageContext()
+                
+                return resultImage
+                
             }
 
+            return codeImage
             
         }
-    
-    
+        
+        return nil
+
     }
     
     override func viewWillDisappear(animated: Bool) {
