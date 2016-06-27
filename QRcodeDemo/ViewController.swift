@@ -35,7 +35,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         
         let input = try! AVCaptureDeviceInput(device: device) as AVCaptureDeviceInput?
         
-        if input != nil {
+        if input == nil {
             let alert = UIAlertController(title: "提示", message: "请在iPhone的\"设置-隐私-相机\"选项中,允许本程序访问您的相机", preferredStyle: .Alert)
             let action = UIAlertAction(title: "确定", style: .Default, handler: nil)
             
@@ -47,8 +47,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             
         }
         
-        if session.canAddInput(input!) {
-            session.addInput(input!)
+        if session.canAddInput(input) {
+            session.addInput(input)
         }
         
         layer = AVCaptureVideoPreviewLayer(session: session)
@@ -56,7 +56,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         layer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         
         //可以看到的镜头区域
-        layer?.frame = CGRectMake(0, 0, 320, 568)
+        layer?.frame = CGRectMake(0, 0, 375, 667)
         
         self.view.layer.insertSublayer(layer!, atIndex: 0)
         
@@ -69,6 +69,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             //设置类型为二维码
             output.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
         }
+        
+        session.startRunning()
         
     }
     
